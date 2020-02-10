@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Price">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tool_bar"
+        android:layout_gravity="top"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#444"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        />
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="45dp"
+        android:textColor="#000"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:text="Update Milk price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="120dp">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/price_change"
+            android:hint="Price"
+            android:textColorHint="#905"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"/>
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:text="Submit"
+        android:id="@+id/submit"
+        android:layout_marginTop="27dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

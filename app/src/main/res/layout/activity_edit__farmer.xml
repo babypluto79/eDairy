@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Edit_Farmer">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tool_bar"
+        android:layout_alignParentTop="true"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#444"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        />
+
+    <TextView
+        android:id="@+id/farmer_firstname"
+       android:layout_marginStart="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tool_bar"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold" />
+
+
+
+<TextView
+    android:id="@+id/farmer_email"
+
+    android:textColor="#000"
+    android:textSize="10sp"
+    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+    android:textStyle="bold"
+   android:layout_marginStart="40dp"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="7dp"
+    android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/farmer_village"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_marginTop="7dp"
+        android:layout_width="wrap_content"
+      android:layout_marginStart="40dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/farmer_phone"
+       android:layout_marginStart="40dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_marginTop="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/farmer_id"
+       android:layout_marginStart="40dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+        android:textStyle="bold"
+        android:layout_marginTop="7dp"
+        android:textColor="#000"
+        android:textSize="10sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/payout"
+        android:layout_marginTop="7dp"
+        android:text="Payout"
+        android:layout_marginStart="40dp"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/milk_amount"
+        android:layout_marginStart="40dp"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/milk_price"
+        android:textSize="12sp"
+        android:layout_marginStart="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/withdrawal_amount"
+        android:layout_marginStart="40dp"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/no_withdrawal"
+        android:layout_marginStart="40dp"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="Milk Records"
+        android:id="@+id/text"
+        android:layout_marginStart="40dp"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_height="wrap_content" />
+
+
+
+    <ListView
+        android:id="@+id/abie"
+        android:layout_below="@id/text"
+        android:background="#777"
+        android:divider="#ffff"
+        android:dividerHeight="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

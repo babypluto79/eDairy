@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Add_Milk">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tool_bar"
+        android:layout_gravity="top"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#444"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        />
+    <TextView
+        android:text="Record Milk"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:textSize="25sp"
+        android:textColor="#000"
+        android:id="@+id/text"
+        android:textStyle="bold"
+        android:layout_height="wrap_content" />
+<TextView
+    android:text="Select date"
+    android:layout_gravity="center"
+    android:layout_marginTop="18dp"
+    android:textColor="#000"
+    android:textStyle="normal"
+    android:textSize="17sp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+<android.widget.CalendarView
+    android:layout_marginTop="8dp"
+    android:layout_height="250dp"
+    android:layout_width="250dp"
+    android:layout_gravity="center"
+    android:id="@+id/Select_Date"
+    />
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:id="@+id/Fuck_you"
+        android:layout_marginTop="20dp"
+       >
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:hint="Litres"
+            android:textColorHint="#933"
+            android:inputType="numberDecimal"
+            android:id="@+id/Milk_quantity"
+            android:layout_height="60dp" />
+    </android.support.design.widget.TextInputLayout>
+    <Button
+
+        android:layout_marginEnd="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#000"
+        android:textStyle="normal"
+        android:id="@+id/Record"
+        android:text="Record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

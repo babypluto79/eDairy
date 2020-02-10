@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.msafi.techgaa">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/jug"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/jug"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".LoginPage">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".AdminActivity" />
+        <activity android:name=".Test" />
+        <activity android:name=".New_Farmer" />
+        <activity android:name=".Edit_Collector" />
+        <activity android:name=".Edit_Farmer" />
+        <activity android:name=".User_Farmer" />
+        <activity android:name=".User_Collector" />
+        <activity android:name=".Add_Milk" />
+        <activity android:name=".Price" />
+        <activity android:name=".Withdrawals" />
+        <activity android:name=".Farmer" />
+        <activity android:name=".Milkreport"></activity>
+    </application>
+
+</manifest>
